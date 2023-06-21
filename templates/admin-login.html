@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block body %}
+<div style="background-color:gray">
+
 <div class="container w-50 my-4">
     <form action="{% url 'admin-panel' %}" method="post">
         {% csrf_token %}

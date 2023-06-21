@@ -11,6 +11,7 @@ class Student(models.Model):
     total = models.IntegerField(default=0)
     percent = models.DecimalField(max_digits=5, decimal_places=2)
 
+
     def __str__(self):
         return self.name
 

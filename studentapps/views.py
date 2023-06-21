@@ -15,8 +15,8 @@ def result(request):
         stat=student.stat
         science=student.science
         total=telugu+maths+stat+science
-        percent=total/400*100
-        if (percent<33):
+        percentage=total/400*100
+        if (percentage<48):
             status = 'Fail'
         else:
             status = 'Pass'
@@ -27,7 +27,8 @@ def result(request):
             'maths':maths,
             'stat':stat,
             'science':science,
-            'percent': percent,
+            'total':total,
+            'percentage': percentage,
             'status':status,
         }
 

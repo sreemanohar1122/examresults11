@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block body %}
+<div style="background-color:orange">
+ <div>
 <div class="container w-25">
     <form action="{% url 'result' %}" method="post">
         {% csrf_token %}
